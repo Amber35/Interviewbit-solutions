@@ -7,7 +7,7 @@ public class Solution {
         {
            xcost=Math.abs(X.get(i)-X.get(i+1));
             ycost=Math.abs(Y.get(j)-Y.get(j+1));
-           // System.out.println("x "+xcost);
+           // System.out.println("x "+xcost); taking minimum for both axis
             //System.out.println("y "+ycost);
             i++;j++;
           cost=cost+Math.max(xcost,ycost);
