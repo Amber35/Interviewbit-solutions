@@ -1,0 +1,18 @@
+//problem can be found :https://www.interviewbit.com/problems/excel-column-title/
+public class Solution {
+	public String convertToTitle(int a) {
+	    int dividend = a;
+    String columnName ="";
+    int modulo;
+
+    while (dividend > 0)
+    {
+        modulo = (dividend - 1) % 26;
+        
+        columnName = (char)(65 + modulo) + columnName;
+        dividend = (int)((dividend - modulo) / 26);
+    } 
+
+    return columnName;
+	}
+}
